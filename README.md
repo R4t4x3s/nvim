@@ -6,6 +6,11 @@
 5) lazygit
 
 
+<!-- TODO  -->
+<!-- 1 - Auto Format -->
+<!-- 2 - README better formating -->
+<!-- 3 - Confirm quit if unsaved changes or autosave on close bufer -->
+<!-- 4 - Find a way to search word under cursor (not so important) -->
 
 ** Help
 

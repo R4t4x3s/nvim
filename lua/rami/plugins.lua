@@ -2,6 +2,7 @@ local helpers = vim.fn
 
 -- AutoInstall packer
 local install_path = helpers.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+
 if helpers.empty(helpers.glob(install_path)) > 0 then -- if packer.vim doesn't exist
   PACKER_BOOTSTRAP = helpers.system {
     'git',
@@ -12,6 +13,7 @@ if helpers.empty(helpers.glob(install_path)) > 0 then -- if packer.vim doesn't e
     install_path
   }
   print "Installing packer ! restart Neovim"
+  vim.cmd [[packadd packer.nvim]] -- load packer on after first install
 end
 
 vim.cmd [[
