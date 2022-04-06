@@ -12,4 +12,5 @@ require("rami.nvim-tree")
 require("rami.bufferline")
 require("rami.null-ls")
 require("rami.toggleterm")
+require("rami.autopairs")
 
