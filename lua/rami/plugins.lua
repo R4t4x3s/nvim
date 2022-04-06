@@ -45,7 +45,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful Lua function used by manu plugins
   use "numToStr/Comment.nvim" -- Easy comments
   use "akinsho/toggleterm.nvim" -- toggleTerm terminal
-
+  use "windwp/nvim-autopairs"  -- autopairs
 
   -- Colorschemes
   use "folke/tokyonight.nvim" -- Colorscheme
