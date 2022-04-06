@@ -50,9 +50,10 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
--- Insert --
--- Press jk fast to enter
-keymap("i", "<C-o>", "<ESC>", opts)
+-- Escape --
+keymap("i", "<C-Space>", "<ESC>", opts)
+keymap("n", "<C-Space>", "<ESC>", opts)
+keymap("v", "<C-Space>", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
