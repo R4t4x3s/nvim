@@ -23,7 +23,7 @@ vim.g.maplocalleader = " "
 keymap("n","<C-s>","<cmd>w!<CR>",opts)
 keymap("n","<C-q>","<cmd>q!<CR>",opts)
 keymap("n","<C-w>","<cmd>Bdelete<CR>",opts)
-keymap("n","/","<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown({ previewer = notfalse }))<CR>",opts)
+keymap("n", "q","<nop>", opts) -- prevents this anonoying Recording that i can't use for now
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -32,7 +32,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Terminal Apps
-keymap("n", "<leader>tg", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts)
+keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts)
 keymap("n", "<C-t>", "<cmd>ToggleTerm<cr>", opts)
 
 -- Resize with arrows
@@ -51,9 +51,7 @@ keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Escape --
-keymap("i", "<C-Space>", "<ESC>", opts)
-keymap("n", "<C-Space>", "<ESC>", opts)
-keymap("v", "<C-Space>", "<ESC>", opts)
+keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -82,7 +80,8 @@ keymap("t", "<C-t>", "<cmd>ToggleTerm<cr>", opts)
 
 -- Telescope
 keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes').get_dropdown({ previewer = notfalse }))<cr>", opts)
+keymap("n", "<C-f>", "<cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes').get_dropdown({ previewer = notfalse }))<cr>", opts)
+keymap("n","<leader>f","<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown({ previewer = notfalse }))<CR>",opts)
 -- keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvitree
