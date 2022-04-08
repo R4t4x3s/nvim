@@ -49,7 +49,8 @@ return packer.startup(function(use)
   use "max397574/better-escape.nvim" -- better escape
 
   -- Colorschemes
-  use "folke/tokyonight.nvim" -- Colorscheme
+  -- use "folke/tokyonight.nvim" -- Colorscheme
+  use ({"rose-pine/neovim", as = "rose-pine"})
 
   -- Completion
   use "hrsh7th/nvim-cmp" -- Completion plugin
