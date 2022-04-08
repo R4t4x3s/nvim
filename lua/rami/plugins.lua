@@ -47,6 +47,7 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim" -- toggleTerm terminal
   use "windwp/nvim-autopairs"  -- autopairs
   use "max397574/better-escape.nvim" -- better escape
+  use "nvim-lualine/lualine.nvim" -- cool statusline
 
   -- Colorschemes
   -- use "folke/tokyonight.nvim" -- Colorscheme

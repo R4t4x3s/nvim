@@ -14,4 +14,5 @@ require("rami.null-ls")
 require("rami.toggleterm")
 require("rami.autopairs")
 require("rami.better-escape")
+require("rami.lua-line")
 
