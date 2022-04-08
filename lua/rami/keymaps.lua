@@ -25,6 +25,7 @@ keymap("n","<C-q>","<cmd>q!<CR>",opts)
 keymap("n","q","<cmd>q<CR>",opts)
 keymap("n","<C-w>","<cmd>Bdelete<CR>",opts)
 keymap("n", "<leader>s","<cmd>SymbolsOutline<CR>", opts) -- prevents this anonoying Recording that i can't use for now
+keymap("n","<C-d>","*",opts) -- search word under cursor
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
