@@ -9,7 +9,8 @@ local formatting = null_ls.builtins.formatting
 null_ls.setup({
   debug = false,
   sources = {
-    formatting.prettier
+    formatting.prettier,
     -- diagnostic.prettier etcetc
+    formatting.stylua
   },
 })

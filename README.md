@@ -6,6 +6,7 @@
 2. ripgrep      (telescope live_grep)
 3. C compiler and libstdc++ (treesitter)
 4. Prettier
+5. StylLua (lua formatter)
 5. lazygit
  
 ## Help
@@ -19,3 +20,5 @@ Documentation: https://github.com/BurntSushi/ripgrep
 Run: sudo apt install g++
 ### Prettier
 npm i -g prettier
+### StylLua
+extract binary from https://github.com/JohnnyMorganz/StyLua/releases and put in path

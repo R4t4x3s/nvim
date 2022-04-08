@@ -5,3 +5,4 @@ end
 
 require("rami.lsp.lsp-installer")
 require("rami.lsp.handlers").setup()
+require("rami.lsp.null-ls")
