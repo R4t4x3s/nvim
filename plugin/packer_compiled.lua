@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/rami/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4d3/LuaSnip"
   },
+  ["better-escape.nvim"] = {
+    loaded = true,
+    path = "/home/rami/.local/share/nvim/site/pack/packer/start/better-escape.nvim",
+    url = "https://github.com/max397574/better-escape.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/rami/.local/share/nvim/site/pack/packer/start/bufferline.nvim",

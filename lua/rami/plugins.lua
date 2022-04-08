@@ -46,6 +46,7 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easy comments
   use "akinsho/toggleterm.nvim" -- toggleTerm terminal
   use "windwp/nvim-autopairs"  -- autopairs
+  use "max397574/better-escape.nvim" -- better escape
 
   -- Colorschemes
   use "folke/tokyonight.nvim" -- Colorscheme

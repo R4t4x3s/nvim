@@ -51,7 +51,8 @@ keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Escape --
-keymap("i", "jk", "<ESC>", opts)
+-- Handled amazingly by better_escape plugin
+-- keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -82,6 +83,7 @@ keymap("t", "<C-t>", "<cmd>ToggleTerm<cr>", opts)
 keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<C-f>", "<cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes').get_dropdown({ previewer = notfalse }))<cr>", opts)
 keymap("n","<leader>f","<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown({ previewer = notfalse }))<CR>",opts)
+keymap("n","gw","<cmd>Telescope grep_string<CR>",opts)
 -- keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvitree
