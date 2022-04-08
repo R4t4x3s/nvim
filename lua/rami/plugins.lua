@@ -48,11 +48,10 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"  -- autopairs
   use "max397574/better-escape.nvim" -- better escape
   use "nvim-lualine/lualine.nvim" -- cool statusline
-
+  use "simrat39/symbols-outline.nvim" -- tag bar
   -- Colorschemes
   -- use "folke/tokyonight.nvim" -- Colorscheme
   use ({"rose-pine/neovim", as = "rose-pine"})
-
   -- Completion
   use "hrsh7th/nvim-cmp" -- Completion plugin
   use "hrsh7th/cmp-buffer" -- Completion from buffer

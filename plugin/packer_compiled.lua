@@ -199,6 +199,11 @@ _G.packer_plugins = {
     path = "/home/rami/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/home/rami/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
+  },
   ["telescope-media-files.nvim"] = {
     loaded = true,
     path = "/home/rami/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim",

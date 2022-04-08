@@ -24,6 +24,7 @@ keymap("n","<C-s>","<cmd>w!<CR>",opts)
 keymap("n","<C-q>","<cmd>q!<CR>",opts)
 keymap("n","<C-w>","<cmd>Bdelete<CR>",opts)
 keymap("n", "q","<nop>", opts) -- prevents this anonoying Recording that i can't use for now
+keymap("n", "<leader>s","<cmd>SymbolsOutline<CR>", opts) -- prevents this anonoying Recording that i can't use for now
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
