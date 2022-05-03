@@ -49,10 +49,8 @@ return packer.startup(function(use)
   use "max397574/better-escape.nvim" -- better escape
   use "nvim-lualine/lualine.nvim" -- cool statusline
   use "simrat39/symbols-outline.nvim" -- tag bar
-  -- Colorschemes
-  -- use "folke/tokyonight.nvim" -- Colorscheme
-  use ({"rose-pine/neovim", as = "rose-pine"})
-  -- Completion
+
+ -- Completion
   use "hrsh7th/nvim-cmp" -- Completion plugin
   use "hrsh7th/cmp-buffer" -- Completion from buffer
   use "hrsh7th/cmp-path" -- Completion for paths
@@ -61,7 +59,6 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lua" -- Completion for nvim lua
 
   -- Buffers
-  use "akinsho/bufferline.nvim"
   use "moll/vim-bbye" -- implement Bdelete to replace the regular bdelete
 
   -- Snippets
@@ -88,9 +85,11 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
-  -- Nvim-tree
+  -- File explorer
   use "kyazdani42/nvim-web-devicons" -- Icons for nvim-tree
-  use "kyazdani42/nvim-tree.lua" -- Actual plugin
+  use "obaland/vfiler.vim"
+  use "obaland/vfiler-column-devicons"
+  -- use "kyazdani42/nvim-tree.lua" -- Actual plugin this is a dumb ass plugin
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

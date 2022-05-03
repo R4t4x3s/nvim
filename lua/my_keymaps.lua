@@ -7,6 +7,7 @@ local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
+keymap("", "s", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -27,11 +28,20 @@ keymap("n","<C-w>","<cmd>Bdelete<CR>",opts)
 keymap("n", "<leader>s","<cmd>SymbolsOutline<CR>", opts) -- prevents this anonoying Recording that i can't use for now
 keymap("n","<C-d>","*",opts) -- search word under cursor
 
--- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
+-- Split Window
+keymap("n", "ss", ":split<CR><C-w>", opts)
+keymap("n", "sv", ":vsplit<CR><C-w>", opts)
+-- Navigate Windows
+keymap("n", "sh", "<C-w>h", opts)
+keymap("n", "sj", "<C-w>j", opts)
+keymap("n", "sk", "<C-w>k", opts)
+keymap("n", "sl", "<C-w>l", opts)
+-- Resizing windows
+keymap("n", "s<c-l>", "<C-w><", opts)
+keymap("n", "s<c-h>", "<C-w>>", opts)
+keymap("n", "s<c-j>", "<C-w>-", opts)
+keymap("n", "s<c-k>", "<C-w>+", opts)
+
 
 -- Terminal Apps
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts)
@@ -88,5 +98,6 @@ keymap("n","<leader>f","<cmd>lua require('telescope.builtin').current_buffer_fuz
 keymap("n","gw","<cmd>Telescope grep_string<CR>",opts)
 -- keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
--- Nvitree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+-- File Explorer 
+keymap("n", "<leader>e", "<cmd>lua _VFILER_EXPLORER()<cr> ", opts)
+keymap("n", "sf", "<cmd>lua _VFILER_DEFAULT()<cr> ", opts)
